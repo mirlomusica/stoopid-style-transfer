@@ -27,7 +27,8 @@ if __name__ == "__main__":
     #stylize frames
     first_frame = 0
     current_frame= first_frame
-    while current_frame < len(os.listdir(frames_path)):
+    i = 0
+    while i < len(os.listdir(frames_path)):
         #
         # fixed args - don't change these unless you have a good reason
         #
@@ -79,3 +80,4 @@ if __name__ == "__main__":
         print('frame:' + format(current_frame, '06d'))
         results_path = st.neural_style_transfer(optimization_config)
         current_frame = current_frame + 1
+        i = i + 1
