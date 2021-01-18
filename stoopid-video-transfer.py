@@ -21,10 +21,7 @@ if __name__ == "__main__":
     os.makedirs(frames_path, exist_ok=True)
     ffmpeg = 'ffmpeg'
 
-    #split frames
-    if len(os.listdir(frames_path)) == 0:
-        subprocess.call(
-            [ffmpeg, '-i', video_path, '-r', str(fps), '-start_number', '0', '-qscale:v', '2', out_frame_pattern, '-c:a', 'copy'])
+
     else:
         print('Skip splitting video into frames and audio, already done.')
     #stylize frames
