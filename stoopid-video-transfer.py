@@ -22,8 +22,7 @@ if __name__ == "__main__":
     ffmpeg = 'ffmpeg'
 
 
-    else:
-        print('Skip splitting video into frames and audio, already done.')
+
     #stylize frames
     first_frame = 0
     current_frame= first_frame

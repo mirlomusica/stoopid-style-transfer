@@ -9,7 +9,7 @@ FILE_NAME_NUM_DIGITS: int = 6
 if __name__ == "__main__":
     fps = 24
     frame_extension = '.jpg'
-    default_resource_dir = 'C:/Users/Jaume/PycharmProjects/stoopid-style-transfer/data/frames'
+    default_resource_dir = 'C:/Users/Jaume/Desktop/frames/'
     content_images_dir = os.path.join(default_resource_dir, 'frames')
     style_images_dir = os.path.join(default_resource_dir, 'style-images')
     output_img_dir = os.path.join(default_resource_dir, 'output-images')
