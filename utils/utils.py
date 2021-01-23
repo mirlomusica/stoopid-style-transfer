@@ -60,15 +60,8 @@ def save_image(img, img_path):
 
 
 def generate_out_img_name(config):
-    prefix = os.path.basename(config['content_img_name']).split('.')[0] + '_' + os.path.basename(config['style_img_name']).split('.')[0]
-    # called from the reconstruction script
-    if 'reconstruct_script' in config:
-    if 'reconstruct_script' in config:
-    if 'reconstruct_script' in config:
-        suffix = f'_o_{config["optimizer"]}_h_{str(config["height"])}_m_{config["model"]}{config["img_format"][1]}'
-    else:
-        suffix = f'_o_{config["optimizer"]}_i_{config["init_method"]}_h_{str(config["height"])}_m_{config["model"]}_cw_{config["content_weight"]}_sw_{config["style_weight"]}_tv_{config["tv_weight"]}{config["img_format"][1]}'
-    return prefix + suffix
+    prefix = os.path.basename(config['content_img_name']))
+    return prefix
 
 
 def save_and_maybe_display(optimizing_img, dump_path, config, img_id, num_of_iterations, should_display=True):
