@@ -60,7 +60,7 @@ def save_image(img, img_path):
 
 
 def generate_out_img_name(config):
-    prefix = os.path.basename(config['content_img_name']))
+    prefix = os.path.basename(config['content_img_name'])
     return prefix
 
 
